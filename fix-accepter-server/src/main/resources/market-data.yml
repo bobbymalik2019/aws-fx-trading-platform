@@ -1,0 +1,61 @@
+
+spring:
+  application:
+    name: fix-accepter-server
+
+market-data:
+  instruments:
+    EURUSD_SPOT:
+      symbol: EUR/USD
+      type: FX_SPOT
+      price-scale: 5
+      pip-size: 0.0001
+
+    GBPUSD_SPOT:
+      symbol: GBP/USD
+      type: FX_SPOT
+      price-scale: 5
+      pip-size: 0.0001
+
+    USDJPY_SPOT:
+      symbol: USD/JPY
+      type: FX_SPOT
+      price-scale: 3
+      pip-size: 0.01
+
+  providers:
+    HSBC:
+      instruments:
+        EURUSD_SPOT:
+          initial-mid: 1.08500
+          spread-pips: 1.2
+          volatility-pips: 0.4
+          interval-ms: 1000
+          bid-size: 5000000
+          ask-size: 4000000
+
+        GBPUSD_SPOT:
+          initial-mid: 1.27500
+          spread-pips: 1.5
+          volatility-pips: 0.6
+          interval-ms: 1500
+          bid-size: 3000000
+          ask-size: 3000000
+
+    BLOOMBERG:
+      instruments:
+        EURUSD_SPOT:
+          initial-mid: 1.08503
+          spread-pips: 0.9
+          volatility-pips: 0.5
+          interval-ms: 500
+          bid-size: 2000000
+          ask-size: 2500000
+
+        USDJPY_SPOT:
+          initial-mid: 153.250
+          spread-pips: 1.1
+          volatility-pips: 0.4
+          interval-ms: 1000
+          bid-size: 2000000
+          ask-size: 2000000
