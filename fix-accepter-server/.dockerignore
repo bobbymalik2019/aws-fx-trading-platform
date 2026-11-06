@@ -1,0 +1,28 @@
+# Git and IDE configuration
+.git
+.idea/
+.vscode/
+*.iml
+
+# QuickFIX/J runtime data
+log/
+logs/
+store/
+
+# Maven build artifacts
+# Exclude everything except the executable JAR
+target/*
+!target/fix-accepter-server-0.0.1-SNAPSHOT.jar
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.jks
